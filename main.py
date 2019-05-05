@@ -38,7 +38,7 @@ quote = Quote()
 quote_message = quote.message
 
 
-close_message = "Solomon" + brief_pause + "is there anything I can help you with?"
+close_message = user.name + brief_pause + "is there anything I can help you with?"
 message = "<speak>" + greeting_message + brief_pause + todo_message + pause + weather_message + pause + news_message + brief_pause + quote_message + brief_pause + close_message + "</speak>"
 
 audio = Audio(message)
